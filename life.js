@@ -4,8 +4,8 @@ var MAX_ITERATIONS = 10; // Maximum range on the iterations
 
 
 // Arrays for storing the Game of Life data
-var current_array = [[], []];
-var next_array = [[], []];
+var current_array;
+var next_array;
 
 // Declare our canvas variables
 var canvas = document.getElementById('life_canvas');
@@ -13,7 +13,13 @@ var canvas_draw = canvas.getContext('2d');
 
 function reset_arrays() {
     // Resets the arrays to zero
+    current_array = new Array(DIMENSIONS);
+    next_array = new Array(DIMENSIONS);
+    
     for (x = 0; x < DIMENSIONS; x++) {
+	current_array[x] = new Array(DIMENSIONS);
+	next_array[x] = new Array(DIMENSIONS);
+	
 	for (y = 0; y < DIMENSIONS; y++) {
 	    current_array[x][y] = 0;
 	    next_array[x][y] = 0;
