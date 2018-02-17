@@ -2,7 +2,6 @@ var DIMENSIONS = 10; // Grid will be a square of DIMENSIONS x DIMENSIONS
 var iteration_count = 0; // Number of iterations executed
 var MAX_ITERATIONS = 10; // Maximum range on the iterations
 
-
 // Arrays for storing the Game of Life data
 var current_array;
 var next_array;
@@ -44,14 +43,14 @@ function display_array() {
 }
 
 function fill_array() {
-    // Fills current_array with 1s in random spots
+    // Fills current_array with 1s in random spots (implement this)
     for (x = 0; x < DIMENSIONS; x++) {
 	for (y = 0; y < DIMENSIONS; y++) {
-	    if (Math.floor(Math.random()) == 0) {
-		current_array[x][y] = 0;
-	    } else {
+
+	    if (y == 3) {
 		current_array[x][y] = 1;
 	    }
+	    
 	}
     }
 }
@@ -64,7 +63,6 @@ function life_iteration() {
 
     // Temporary code to display something at least
     fill_array();
-    console.log("One iteration\n");
 
     if (iteration_count == MAX_ITERATIONS) {
 	iteration_count = 0;
@@ -79,4 +77,4 @@ function life_iteration() {
     
 }
 
-setInterval(life_iteration, 500);
+setInterval(life_iteration, 1000);
