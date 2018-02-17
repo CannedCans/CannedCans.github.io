@@ -56,6 +56,9 @@ reset_arrays();
 function life_iteration() {
     // Performs one iteration of the Game of Life, including displaying the content
 
+    // Temporary code to display something at least
+    fill_array();
+    console.log("One iteration\n");
 
     if (iteration_count == MAX_ITERATIONS) {
 	iteration_count = 0;
