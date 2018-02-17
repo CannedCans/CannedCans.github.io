@@ -55,14 +55,17 @@ function fill_array() {
     }
 }
 
+function calculate_next_array() {
+    // Calculates the next iteration of the array in next_array
+    // Sets current_array appropriately
+}
+
 // Initialize the arrays
 reset_arrays();
 
 function life_iteration() {
     // Performs one iteration of the Game of Life, including displaying the content
-
-    // Temporary code to display something at least
-    fill_array();
+    calculate_next_array();
 
     if (iteration_count == MAX_ITERATIONS) {
 	iteration_count = 0;
@@ -72,9 +75,9 @@ function life_iteration() {
 	iteration_count++;
     }
 
-    // Now we display the board which is either empty or with its content
+    // Now we display the board
     display_array();
     
 }
 
-setInterval(life_iteration, 1000);
+setInterval(life_iteration, 2000);
