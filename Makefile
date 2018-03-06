@@ -1,0 +1,2 @@
+etags:
+	ctags -e -R
