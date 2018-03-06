@@ -1,0 +1,17 @@
+.navmenu ul {
+    float: left;
+    margin-right: 20px;
+}
+
+.navmenu li a {
+    text-decoration: none;
+    background-color: #FFFFFF;
+    block-size: 10;
+    display: block;
+  
+}
+
+.navmenu li a:hover {
+    background-color: #AAFF00;
+  
+}
