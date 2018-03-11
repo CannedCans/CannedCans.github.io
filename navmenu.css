@@ -1,6 +1,7 @@
 .navmenu ul {
     float: left;
     margin-right: 20px;
+    list-style-type: none;
 }
 
 .navmenu li a {
