@@ -1,10 +1,10 @@
-.navmenu ul {
+#navmenu ul {
     float: left;
     margin-right: 20px;
     list-style-type: none;
 }
 
-.navmenu li a {
+#navmenu li a {
     text-decoration: none;
     background-color: #FFFFFF;
     block-size: 10;
@@ -12,7 +12,7 @@
   
 }
 
-.navmenu li a:hover {
+#navmenu li a:hover {
     background-color: #AAFF00;
   
 }
